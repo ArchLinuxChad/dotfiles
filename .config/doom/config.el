@@ -74,3 +74,20 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;; set tokyo-night theme
+(setq doom-theme 'doom-outrun-electric)
+
+;; custom keybinds
+
+(map! :leader
+      :desc "Keybind for neotree"
+      "r t" #'neotree-show)
+
+(map! :leader
+      :desc "Keybind for neotree"
+      "r h" #'neotree-hide)
+
+(map! :leader
+      :desc "Keybind for vterm"
+      "t t" #'term)
