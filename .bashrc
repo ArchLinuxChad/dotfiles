@@ -123,3 +123,17 @@ alias push="git push -u origin main"
 
 # get rid of snaps on lsblk
 alias lsblk="lsblk -e 7"
+
+alias ls="eza -aal"
+
+# set vi mode
+set -o vi
+
+# Created by `pipx` on 2024-10-17 20:57:19
+export PATH="$PATH:/home/dillon/.local/bin"
+
+# alias for conservation
+alias c="sudo vi /sys/bus/platform/drivers/ideapad_acpi/VPC2004\:00/conservation_mode"
+
+# starship prompt
+eval "$(starship init bash)"
