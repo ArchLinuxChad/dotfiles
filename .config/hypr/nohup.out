@@ -1,0 +1,57 @@
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[CRITICAL] Cannot launch multiple instances of Hyprpaper at once!
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (1), removing 8.3MB
+Error in config: 
+Config error in file /home/dillon/.config/hypr/hyprpaper.conf at line 3: Invalid config line
+[LOG] Preloaded target /home/dillon/wallpapers/darkseid.jpg in 13.82ms -> Pixel size: [1920, 1080]
+[LOG] Buffer created for target /home/dillon/wallpapers/darkseid.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 8.3MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/4520b30d498daca8079365bdb909a8dea38e8d55_1732553845_1688710267/.hyprpaper.sock (fd: 5)
+[LOG] configure for eDP-1
+[LOG] handlePreferredScale: 1.00 for 55e40c0cf3a0
+[LOG] configure for eDP-1
+[LOG] configure for DP-1
+[LOG] handlePreferredScale: 1.00 for 55e40c0d7d80
+[LOG] configure for DP-1
+[LOG] Image data for eDP-1: /home/dillon/wallpapers/darkseid.jpg at [-0.00, 0.00], scale: 1.00 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for c0cf3a0
+[LOG] Image data for DP-1: /home/dillon/wallpapers/darkseid.jpg at [-0.00, 0.00], scale: 1.00 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for c0d7d80
+[LOG] handlePreferredScale: 1.00 for 55e40c0cf3a0
+[LOG] handlePreferredScale: 1.00 for 55e40c0d7d80
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/dillon/wallpapers/darkseid.jpg at [-0.00, 0.00], scale: 1.00 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for c0cf3a0
+[LOG] handlePreferredScale: 1.50 for 55e40c0cf3a0
+[LOG] Buffer created for target /home/dillon/wallpapers/darkseid.jpg, Shared Memory usage: 18.7MB
+[LOG] Total SM usage for all buffers: 27.0MB
+[LOG] Image data for eDP-1: /home/dillon/wallpapers/darkseid.jpg at [-0.00, 0.00], scale: 1.50 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for c0cf3a0
+[LOG] handlePreferredScale: 1.50 for 55e40c0cf3a0
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/dillon/wallpapers/darkseid.jpg at [-0.00, 0.00], scale: 1.50 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for c0cf3a0
+[LOG] handlePreferredScale: 1.50 for 55e40c0cf3a0
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/dillon/wallpapers/darkseid.jpg at [-0.00, 0.00], scale: 1.50 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for c0cf3a0
+[LOG] handlePreferredScale: 1.50 for 55e40c0cf3a0
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/dillon/wallpapers/darkseid.jpg at [-0.00, 0.00], scale: 1.50 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for c0cf3a0
+[LOG] handlePreferredScale: 1.50 for 55e40c0cf3a0
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/dillon/wallpapers/darkseid.jpg at [-0.00, 0.00], scale: 1.50 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for c0cf3a0
+[LOG] handlePreferredScale: 1.50 for 55e40c0cf3a0
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/dillon/wallpapers/darkseid.jpg at [-0.00, 0.00], scale: 1.50 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for c0cf3a0
+[LOG] handlePreferredScale: 1.50 for 55e40c0cf3a0
+[LOG] configure for eDP-1
+[LOG] Image data for eDP-1: /home/dillon/wallpapers/darkseid.jpg at [-0.00, 0.00], scale: 1.50 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1920x1080 for c0cf3a0
+[LOG] handlePreferredScale: 1.50 for 55e40c0cf3a0

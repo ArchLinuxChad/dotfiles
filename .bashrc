@@ -134,6 +134,12 @@ export PATH="$PATH:/home/dillon/.local/bin"
 
 # alias for conservation
 alias c="sudo vi /sys/bus/platform/drivers/ideapad_acpi/VPC2004\:00/conservation_mode"
+unset SSH_ASKPASS
+
+fastfetch
 
 # starship prompt
 eval "$(starship init bash)"
+
+# start zoxide
+eval "$(zoxide init bash)"
