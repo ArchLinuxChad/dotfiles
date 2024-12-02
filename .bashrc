@@ -136,10 +136,19 @@ export PATH="$PATH:/home/dillon/.local/bin"
 alias c="sudo vi /sys/bus/platform/drivers/ideapad_acpi/VPC2004\:00/conservation_mode"
 unset SSH_ASKPASS
 
-fastfetch
+bashfetch
 
 # starship prompt
 eval "$(starship init bash)"
 
+# set zi keybind
+bind '"\C-f":"zi\r"'
+# bind for dots script
+bind '"\C-b":"dots\r"'
+#bind for clear
+bind '"\C-l":"clear\r"'
+
 # start zoxide
+alias cd="z"
 eval "$(zoxide init bash)"
+
