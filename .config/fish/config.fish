@@ -14,3 +14,7 @@ alias addup="git add ."
 alias commit="git commit -m"
 
 alias push="git push -u origin main"
+
+alias z="zellij -l ~/.config/zellij/layout.kdl"
+
+figlet Fedora | lolcat
