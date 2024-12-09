@@ -17,4 +17,4 @@ alias push="git push -u origin main"
 
 alias z="zellij -l ~/.config/zellij/layout.kdl"
 
-figlet Fedora | lolcat
+bashfetch
