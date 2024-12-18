@@ -1,12 +1,15 @@
 (setq package-enable-at-startup nil)
 
+;; disable backup files
+(setq make-backup-files nil)
+
 ;; remove gui bars
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
-
 ;; show line number
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
+(setq display-line-numbers-type 'relative)
 
 ;; set font size
 (set-face-attribute 'default nil :font "SpaceMono Nerd Font-18" )
@@ -34,7 +37,7 @@
 
 ;; install evil mode
 (straight-use-package 'evil)
-;(evil-mode 1)
+(evil-mode 1)
 
 ;; install a dashboard
 (straight-use-package 'dashboard)
@@ -51,12 +54,6 @@
 (straight-use-package 'smartparens)
 
 (add-hook 'prog-mode-hook #'smartparens-mode)
-
-;; install org-superstar
-(straight-use-package 'org-superstar)
-(require 'org-superstar)
-(add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
-
 ;; install vterm
 (straight-use-package 'vterm)
 
@@ -66,28 +63,8 @@
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
 
-;; install exwm
-(straight-use-package 'exwm)
+;; org-superstar(you need to instal with melpa)
+(add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
-(require 'exwm)
-;; Set the initial workspace number.
-(setq exwm-workspace-number 4)
-;; Make class name the buffer name.
-(add-hook 'exwm-update-class-hook
-  (lambda () (exwm-workspace-rename-buffer exwm-class-name)))
-;; Global keybindings.
-(setq exwm-input-global-keys
-      `(([?\s-r] . exwm-reset) ;; s-r: Reset (to line-mode).
-        ([?\s-w] . exwm-workspace-switch) ;; s-w: Switch workspace.
-        ([?\s-&] . (lambda (cmd) ;; s-&: Launch application.
-                     (interactive (list (read-shell-command "$ ")))
-                     (start-process-shell-command cmd nil cmd)))
-        ;; s-N: Switch to certain workspace.
-        ,@(mapcar (lambda (i)
-                    `(,(kbd (format "s-%d" i)) .
-                      (lambda ()
-                        (interactive)
-                        (exwm-workspace-switch-create ,i))))
-                  (number-sequence 0 9))))
-;; Enable EXWM
-(exwm-enable)
+;; install magit
+(straight-use-package 'magit)

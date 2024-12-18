@@ -1,25 +1,34 @@
-# .bashrc
+#
+# ~/.bashrc
+#
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
-fi
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
-# User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
-export PATH
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\w@\u] > '
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
+# alias for clear
+alias cls="clear"
 
-# User specific aliases and functions
-if [ -d ~/.bashrc.d ]; then
-    for rc in ~/.bashrc.d/*; do
-        if [ -f "$rc" ]; then
-            . "$rc"
-        fi
-    done
-fi
-unset rc
+alias ls="exa -aal"
+
+# add to path
+export PATH="/home/$USER/.local/bin:$PATH"
+
+# alias for git
+alias addup="git add ."
+alias commit="git commit -m"
+alias push="git push -u origin main"
+
+# bind for zi
+bind "'C-b':'zi<CR>'"
+
+# alias for trash
+alias rm="trash -v"
+
+# run fastfetch
+fastfetch
+
+eval "$(zoxide init bash)"

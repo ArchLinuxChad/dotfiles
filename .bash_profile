@@ -1,8 +1,9 @@
-# .bash_profile
+#
+# ~/.bash_profile
+#
 
-# Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+if [[ "$(tty)" == "/dev/tty1" ]]; then
+    startx
 fi
-
-# User specific environment and startup programs
