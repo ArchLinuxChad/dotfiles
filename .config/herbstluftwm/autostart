@@ -124,7 +124,7 @@ hc set frame_border_width 5
 hc set show_frame_decorations 'nonempty'
 hc set frame_bg_transparent on
 hc set frame_transparent_width 5
-hc set frame_gap 11
+hc set frame_gap 0
 
 hc attr theme.title_height 0
 hc attr theme.title_when always
@@ -187,12 +187,12 @@ hc unlock
 # hc detect_monitors
 
 # find the panel
-panel=~/.config/polybar/launch.sh
-[ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
-for monitor in $(hc list_monitors | cut -d: -f1) ; do
+#panel=~/.config/polybar/launch.sh
+#[ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
+#for monitor in $(hc list_monitors | cut -d: -f1) ; do
     # start it on each monitor
-    "$panel" "$monitor" &
-done
+#    "$panel" "$monitor" &
+#done
 
 # custom keybinds
 hc keybind $Mod-Shift-Return spawn $RUNNER

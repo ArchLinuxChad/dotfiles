@@ -7,7 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\w@\u] > '
+PS1='\033[31m[\w@\u] > \033[0m'
 
 # alias for clear
 alias cls="clear"
@@ -23,7 +23,9 @@ alias commit="git commit -m"
 alias push="git push -u origin main"
 
 # bind for zi
-bind "'C-b':'zi<CR>'"
+bind "'C-f':'zi\r'"
+# bind for dots
+bind "'C-b':'dots\r'"
 
 # alias for trash
 alias rm="trash -v"
